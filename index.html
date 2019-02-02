@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #todo-container{
+      background-color: aqua;
+      text-align: center;
+      height: 5rem;
+    }
+
+    #todo-input{
+      width: 20rem;
+    }
+
+    #todo-group{
+      background-color: yellow;
+      height: 10rem;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+  <div id="todo-container">
+    <input id="todo-input" type="text" placeholder="add a todo">
+    <input type="submit" value="Add todo" id="submit-button">
+  </div>
+
+  <div>
+    <div id="todo-group">
+
+    </div>
+  </div>
+  
+  <script>
+    
+      document.getElementById("submit-button").onclick = function (){
+    
+        var todo = document.getElementById("todo-input");
+
+        document.getElementById('todo-group').innerHTML += '<p>' + todo.value + '</p>';        
+    }
+
+    // let name = window.prompt('what is your name?')
+
+    // let age = window.prompt('how old are you?')
+
+    // if (age == 21){
+    //   alert(`${name} you can vote next year`)
+      
+    // }else if(age < 22){
+      
+    //   alert(`${name} can't vote in elections`)
+
+    // }
+    // else{
+
+    //   alert(`${name} can vote in elections `)
+
+    // }
+
+  </script>
+
+</body>
+
+</html>
