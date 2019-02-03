@@ -6,17 +6,18 @@ let arr = [
 ];
 
 
-// console.log(
-//    // arr.filter(s => s.avgScore < 75)
-// //    arr.map(s => {
-// //       if(s.avgScore < 75){
-// //          return{
-// //          ...s,
-// //          avgScore: s.avgScore + 1, 
+console.log(
+   //arr.filter(s => s.avgScore < 75)
+   arr.map(s => {
+      if(s.avgScore < 75){
+         return{
+         ...s,
+         avgScore: s.avgScore + 1, 
          
-// //       }
-// //    }
-// // })
+      }
+   }
+})
+);
 
 //    arr.reduce((accu, current) => accu + current.fullName.length + current.lastName.length, 0)
 // );
@@ -25,9 +26,9 @@ let arr = [
 //    console.log(s.age);
 // });
 
-arr.forEach((s, i) => {
-   console.log(s.age);
-});
+// arr.forEach((s, i) => {
+//    console.log(s.age);
+// });
 
 // let students = [
 //                 {name: 'muhamed', age: 25, married: false, score: 61.32}, 
