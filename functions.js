@@ -30,6 +30,7 @@ p.__proto__.getFullName = function(){
 
 console.log('p: ', p);
 console.log('get foo: ', p.getFoo());
+console.log('proto: ', p.__proto__.hasOwnProperty('getFoo'))
 console.log('proto: ', p.__proto__)
 console.log('proto of proto', p.__proto__.__proto__)
 console.log('proto of proto has own property', p.__proto__.__proto__.hasOwnProperty('getFoo'))
