@@ -1,6 +1,98 @@
-class Library{
-   constructor(books, isbn, title, number, author)
+class School{
+   constructor() {
+
+      this.teachers = [];
+      this.students = [];      
+   }
+
+   addTeacher(teacher){
+      this.teachers.push(teacher);
+   }
+
+   registerStudent(student){
+      this.students.push(student);
+   }
+
+   fireTeacher(index){
+      this.teachers.splice(index, 1);
+   }
+
+   fireStudent(index){
+      this.students.splice(index, 1);
+   }
+
 }
+
+class Teacher{
+
+   
+}
+
+class Student{
+   
+}
+
+const school1 = new School();
+
+school1.addTeacher('Ahmed');
+
+school1.addTeacher('Azad');
+
+school1.registerStudent('Muhamed');
+
+school1.registerStudent('Ali');
+
+
+console.log(school1.teachers);
+
+console.log(school1.students);
+
+school1.fireStudent(1);
+
+school1.fireTeacher(0);
+
+console.log(school1.teachers);
+
+console.log(school1.students);
+
+
+
+
+
+
+//////////////////////////////////////////
+// class Library {
+//    constructor() {
+//       this.book = [];
+//    }
+
+//    addBook(book) {
+//       if (!(book instanceof Book)) throw Error('book is not of type Book');
+//       this.book.push(book);
+//    }
+
+
+// }
+
+// class Book {
+
+//    constructor(isbn, title, numOfPages, author) {
+
+//       this.isbn = isbn;
+//       this.title = title;
+//       this.numOfPages = numOfPages;
+//       this.author = author;
+
+//    }
+// }
+
+// class Author {
+//    constructor(firstName, lastName) {
+//       this.firstName = firstName;
+//       this.lastName = lastName;
+//    }
+// }
+
 
 // class Car{
 //    constructor(engine, color, manufacturer, year){
