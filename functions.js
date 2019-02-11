@@ -39,7 +39,17 @@ console.log('proto of proto has own property', p.__proto__.__proto__.hasOwnPrope
 console.log('proto of proto of proto', p.__proto__.__proto__.__proto__)
 // console.log(p.getFullName());
 
+String.prototype.getFoo = function(){
+    return 'bar'
+}
+
 const o = {}
 o.__proto__ = Person.prototype
 console.log('O: ', o);
-console.log(o.getFullName())
+console.log(o.getFoo())
+
+console.log('string', ''.getFoo())
+console.log('number', (2).getFoo())
+console.log('array', [].getFoo())
+console.log('consol.log', console.log.getFoo())
+console.log('global', global.getFoo())
